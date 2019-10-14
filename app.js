@@ -6,7 +6,7 @@ const app = express();
 const PORT = 4000;
 
 mongoose.connect(
-  'mongodb+srv://admin:5bB3sURW35uMVsOb@graphql-project-cluster-quy2e.mongodb.net/test?retryWrites=true&w=majority'
+  'CONNECTION_STRING'
 );
 
 mongoose.connection.once('open', () => {
